@@ -17,12 +17,3 @@ webapp/.settings/org.eclipse.wst.common.project.facet.core.xml
 webapp/.settings/org.eclipse.wst.jsdt.ui.superType.container
 webapp/.settings/org.eclipse.wst.jsdt.ui.superType.name
 webapp/.settings/org.eclipse.wst.validation.prefs
-taglib/.classpath
-taglib/.project
-taglib/.settings/org.eclipse.core.resources.prefs
-taglib/.settings/org.eclipse.jdt.core.prefs
-taglib/.settings/org.eclipse.m2e.core.prefs
-taglib/.settings/org.eclipse.wst.common.component
-taglib/.settings/org.eclipse.wst.common.project.facet.core.xml
-.project
-.settings/org.eclipse.m2e.core.prefs

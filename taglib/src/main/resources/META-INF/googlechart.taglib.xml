@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<facelet-taglib xmlns="http://java.sun.com/xml/ns/javaee"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+                version="2.0">
+   <namespace>http://org.ypmamedia.googlefaces/charts</namespace>
+	<tag>
+		<tag-name>pieChart</tag-name>
+	 	<component>
+			<component-type>pieChart</component-type>
+			<renderer-type>googleChartRenderer</renderer-type>
+		</component>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<type>org.ypmamedia.googlefaces.model.DataTable</type>
+		</attribute>
+	</tag>
+	<tag>
+		<tag-name>barChart</tag-name>
+	 	<component>
+			<component-type>barChart</component-type>
+			<renderer-type>googleChartRenderer</renderer-type>
+		</component>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<type>org.ypmamedia.googlefaces.model.DataTable</type>
+		</attribute>
+	</tag>
+	<tag>
+		<tag-name>columnChart</tag-name>
+	 	<component>
+			<component-type>columnChart</component-type>
+			<renderer-type>googleChartRenderer</renderer-type>
+		</component>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<type>org.ypmamedia.googlefaces.model.DataTable</type>
+		</attribute>
+	</tag>
+</facelet-taglib> 
