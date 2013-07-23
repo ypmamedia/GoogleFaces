@@ -12,31 +12,31 @@ import org.ypmamedia.googlefaces.model.Row;
 @SessionScoped
 public class TestController {
 	
-	private DataTable chartModel = new DataTable();
+	private DataTable dataTable = new DataTable();
     
 	@PostConstruct
 	public void setup() {
-        chartModel.addColumn(new Column(Column.Type.string, "Worktype"));
-        chartModel.addColumn(new Column(Column.Type.number, "Hours"));
+        dataTable.addColumn(new Column(Column.Type.string, "Worktype"));
+        dataTable.addColumn(new Column(Column.Type.number, "Hours"));
         
         Row row = new Row(2);
         row.addEntry("Sleep");
         row.addEntry("5");
-        chartModel.addRow(row);
+        dataTable.addRow(row);
         
         Row row2 = new Row(2);
         row2.addEntry("Eat");
         row2.addEntry("2");
-        chartModel.addRow(row2);
+        dataTable.addRow(row2);
         
         Row row3 = new Row(2);
         row3.addEntry("Work");
         row3.addEntry("4");
-        chartModel.addRow(row3);
+        dataTable.addRow(row3);
         
 	}
  
-    public DataTable getChartModel() {
-        return chartModel;
+    public DataTable getDataTable() {
+        return dataTable;
     }
 }
