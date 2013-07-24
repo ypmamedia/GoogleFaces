@@ -39,8 +39,46 @@
 <h3>
 <a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example.</h3>
 
-<div class="highlight"><pre>    <span class="nt">&lt;gf:pieChart</span> <span class="na">title=</span><span class="s">"TestChart"</span> <span class="na">value=</span><span class="s">"#{dataProvider.dataTable}"</span> 
+<p>IN your xhtml page:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;gf:pieChart</span> <span class="na">value=</span><span class="s">"#{testController.dataTable}"</span> 
      <span class="na">options=</span><span class="s">"backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}"</span> <span class="nt">/&gt;</span>
+</pre></div>
+
+<p>Your backing bean:</p>
+
+<div class="highlight"><pre><span class="nd">@ManagedBean</span>
+<span class="nd">@SessionScoped</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestController</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">DataTable</span> <span class="n">dataTable</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DataTable</span><span class="o">();</span>
+
+    <span class="nd">@PostConstruct</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setup</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">dataTable</span><span class="o">.</span><span class="na">addColumn</span><span class="o">(</span><span class="k">new</span> <span class="n">Column</span><span class="o">(</span><span class="n">Column</span><span class="o">.</span><span class="na">Type</span><span class="o">.</span><span class="na">string</span><span class="o">,</span> <span class="s">"Worktype"</span><span class="o">));</span>
+        <span class="n">dataTable</span><span class="o">.</span><span class="na">addColumn</span><span class="o">(</span><span class="k">new</span> <span class="n">Column</span><span class="o">(</span><span class="n">Column</span><span class="o">.</span><span class="na">Type</span><span class="o">.</span><span class="na">number</span><span class="o">,</span> <span class="s">"Hours"</span><span class="o">));</span>
+
+        <span class="n">Row</span> <span class="n">row</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Row</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">row</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"Sleep"</span><span class="o">);</span>
+        <span class="n">row</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"5"</span><span class="o">);</span>
+        <span class="n">dataTable</span><span class="o">.</span><span class="na">addRow</span><span class="o">(</span><span class="n">row</span><span class="o">);</span>
+
+        <span class="n">Row</span> <span class="n">row2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Row</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">row2</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"Eat"</span><span class="o">);</span>
+        <span class="n">row2</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"2"</span><span class="o">);</span>
+        <span class="n">dataTable</span><span class="o">.</span><span class="na">addRow</span><span class="o">(</span><span class="n">row2</span><span class="o">);</span>
+
+        <span class="n">Row</span> <span class="n">row3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Row</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">row3</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"Work"</span><span class="o">);</span>
+        <span class="n">row3</span><span class="o">.</span><span class="na">addEntry</span><span class="o">(</span><span class="s">"4"</span><span class="o">);</span>
+        <span class="n">dataTable</span><span class="o">.</span><span class="na">addRow</span><span class="o">(</span><span class="n">row3</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">DataTable</span> <span class="nf">getDataTable</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">dataTable</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </pre></div>
       </section>
     </div>
@@ -53,7 +91,17 @@
       </footer>
     </div>
 
-    
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30198428-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
 
   </body>
 </html>
