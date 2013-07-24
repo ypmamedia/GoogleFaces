@@ -3,21 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.ypmamedia</groupId>
+    <groupId>nl.ypmamedia.googlefaces</groupId>
     <artifactId>googlefaces-webapp</artifactId>
     <packaging>war</packaging>
-    <version>${project.parent.version}</version>
     <name>GoogleFaces (Webapp)</name>
 
     <parent>
-        <groupId>org.ypmamedia</groupId>
+        <groupId>nl.ypmamedia.googlefaces</groupId>
         <artifactId>googlefaces</artifactId>
         <version>1.0.0.alpha1</version>
     </parent>
 
     <dependencies>
 	    <dependency>
-            <groupId>org.ypmamedia</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>googlefaces-taglib</artifactId>
             <version>${project.version}</version>
             <scope>compile</scope>

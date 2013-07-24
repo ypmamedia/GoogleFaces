@@ -1,11 +1,11 @@
-package org.ypmamedia.googlefaces.charts;
+package nl.ypmamedia.googlefaces.charts;
 
 import javax.faces.component.UIComponentBase;
 
 public abstract class UIChart extends UIComponentBase {
 
-    public static final String DEFAULT_RENDERER = "org.ypmamedia.googlefaces.charts.ChartRenderer";
-    public static final String COMPONENT_FAMILY = "org.ypmamedia.googlefaces.charts";
+    public static final String DEFAULT_RENDERER = "nl.ypmamedia.googlefaces.charts.ChartRenderer";
+    public static final String COMPONENT_FAMILY = "nl.ypmamedia.googlefaces.charts";
 
     abstract public String getType();
     

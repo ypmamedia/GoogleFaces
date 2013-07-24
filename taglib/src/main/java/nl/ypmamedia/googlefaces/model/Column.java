@@ -1,4 +1,4 @@
-package org.ypmamedia.googlefaces.model;
+package nl.ypmamedia.googlefaces.model;
 
 public class Column {
 

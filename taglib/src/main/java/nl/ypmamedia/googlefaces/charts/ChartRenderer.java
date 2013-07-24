@@ -1,4 +1,4 @@
-package org.ypmamedia.googlefaces.charts;
+package nl.ypmamedia.googlefaces.charts;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import javax.faces.context.ResponseWriter;
 import javax.faces.render.FacesRenderer;
 import javax.faces.render.Renderer;
 
-import org.ypmamedia.googlefaces.model.DataTable;
+import nl.ypmamedia.googlefaces.model.DataTable;
 
-@FacesRenderer(componentFamily="org.ypmamedia.googlefaces.charts",
+@FacesRenderer(componentFamily="nl.ypmamedia.googlefaces.charts",
                 rendererType="googleChartRenderer")
 public class ChartRenderer extends Renderer {
 

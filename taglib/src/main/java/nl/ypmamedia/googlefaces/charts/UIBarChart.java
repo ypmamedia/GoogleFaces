@@ -1,4 +1,4 @@
-package org.ypmamedia.googlefaces.charts;
+package nl.ypmamedia.googlefaces.charts;
 
 import javax.faces.component.FacesComponent;
 

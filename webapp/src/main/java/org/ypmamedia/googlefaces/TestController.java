@@ -4,9 +4,9 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import org.ypmamedia.googlefaces.model.Column;
-import org.ypmamedia.googlefaces.model.DataTable;
-import org.ypmamedia.googlefaces.model.Row;
+import nl.ypmamedia.googlefaces.model.Column;
+import nl.ypmamedia.googlefaces.model.DataTable;
+import nl.ypmamedia.googlefaces.model.Row;
 
 @ManagedBean
 @SessionScoped
