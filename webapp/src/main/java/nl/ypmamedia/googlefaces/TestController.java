@@ -1,4 +1,4 @@
-package org.ypmamedia.googlefaces;
+package nl.ypmamedia.googlefaces;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
