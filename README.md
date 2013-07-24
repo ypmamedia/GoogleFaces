@@ -2,7 +2,8 @@
 
 ### Introduction.
 
-GoogleFaces is a JSF library which provides a set of JSF components to use Google Charts in your JSF application.
+GoogleFaces (http://googlefaces.ypmamedia.nl) is a JSF library which provides a set of JSF components 
+to use Google Charts in your JSF application.
 
 ### Example.
 
@@ -49,4 +50,4 @@ public class TestController {
 }
 ```
 
-http://ypmamedia.github.io/GoogleFaces
+
