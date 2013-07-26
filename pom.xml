@@ -16,9 +16,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:ampyc@github.com:ypmamedia/GoogleFaces.git</connection>
-		<developerConnection>scm:git:ampyc@github.com:ypmamedia/GoogleFaces.git</developerConnection>
-		<url>ampyc@github.com:ypmamedia/GoogleFaces.git</url>
+		<connection>scm:git:git@github.com:ypmamedia/GoogleFaces.git</connection>
+		<developerConnection>scm:git:git@github.com:ypmamedia/GoogleFaces.git</developerConnection>
+		<url>scm:git:git@github.com:ypmamedia/GoogleFaces.git</url>
 	</scm>
 
 	<developers>
