@@ -1,15 +1,29 @@
-# GoogleFaces
-
-### Introduction. 
+# GoogleFaces 1.0.0. Alpha 2
+## Introduction
 
 [![Build Status](https://travis-ci.org/ypmamedia/GoogleFaces.png?branch=master)](https://travis-ci.org/ypmamedia/GoogleFaces)
 
 GoogleFaces (http://googlefaces.ypmamedia.nl) is a JSF library which provides a set of JSF components 
 to use Google Charts in your JSF application.
 
-### Example.
+## Documentation
+###Installation
 
-IN your xhtml page:
+Add the dependency in your Maven pom.xml:
+```xml
+<dependency>
+  <groupId>nl.ypmamedia.googlefaces</groupId>
+  <artifactId>googlefaces-taglib</artifactId>
+  <version>1.0.0-alpha2</version>
+</dependency>
+```
+
+(or download the jar if no Maven or other Central Repository compatible build/dependency management tool is used)
+
+That's it.
+
+### Usage
+In your xhtml page:
 ```xml
 <gf:pieChart value="#{testController.dataTable}" 
      options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
