@@ -41,4 +41,16 @@
 			<type>nl.ypmamedia.googlefaces.model.DataTable</type>
 		</attribute>
 	</tag>
+	<tag>
+		<tag-name>lineChart</tag-name>
+	 	<component>
+			<component-type>lineChart</component-type>
+			<renderer-type>googleChartRenderer</renderer-type>
+		</component>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<type>nl.ypmamedia.googlefaces.model.DataTable</type>
+		</attribute>
+	</tag>
 </facelet-taglib> 

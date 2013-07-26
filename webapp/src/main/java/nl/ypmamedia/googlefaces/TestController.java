@@ -13,6 +13,7 @@ import nl.ypmamedia.googlefaces.model.Row;
 public class TestController {
 	
 	private DataTable dataTable = new DataTable();
+	private DataTable dataTableTwoSeries = new DataTable();
     
 	@PostConstruct
 	public void setup() {
@@ -34,9 +35,39 @@ public class TestController {
         row3.addEntry("4");
         dataTable.addRow(row3);
         
+        creatDataTableTwoSeries();
+      
+	}
+	
+	private void creatDataTableTwoSeries(){
+		dataTableTwoSeries.addColumn(new Column(Column.Type.string, "Year"));
+        dataTableTwoSeries.addColumn(new Column(Column.Type.number, "Java popularity"));
+        dataTableTwoSeries.addColumn(new Column(Column.Type.number, ".NET popularity"));
+	        
+        Row row = new Row(3);
+        row.addEntry("2001");
+        row.addEntry("0.3");
+        row.addEntry("0.5");
+        dataTableTwoSeries.addRow(row);
+        
+        Row row2 = new Row(3);
+        row2.addEntry("2002");
+        row2.addEntry("0.4");
+        row2.addEntry("0.4");
+        dataTableTwoSeries.addRow(row2);
+        
+        Row row3 = new Row(3);
+        row3.addEntry("2003");
+        row3.addEntry("0.5");
+        row3.addEntry("0.3");
+        dataTableTwoSeries.addRow(row3);
 	}
  
     public DataTable getDataTable() {
         return dataTable;
     }
+
+	public DataTable getDataTableTwoSeries() {
+		return dataTableTwoSeries;
+	}
 }

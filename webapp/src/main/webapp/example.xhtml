@@ -43,6 +43,22 @@
 						options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
 				</div>
 			</div>
+			
+			<div class="span4">
+				<div class="well">
+					<h2>Line Chart</h2>
+					<gc:lineChart value="#{testController.dataTableTwoSeries}"
+					 options="vAxis: {minValue:0, maxValue: 1, format:'#%'}, backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
+				</div>
+			</div>
+			
+			<div class="span4">
+				<div class="well">
+					<h2>Column Chart</h2>
+					<gc:columnChart value="#{testController.dataTableTwoSeries}"
+					 options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
+				</div>
+			</div>
 
 		</div>
 
