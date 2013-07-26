@@ -2,21 +2,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:gc="http://googlefaces.ypmamedia.nl/charts">
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:gc="http://googlefaces.ypmamedia.nl/charts">
 <h:head>
-    <title>GoogleFaces test page</title>
+	<title>GoogleFaces Example's</title>
 </h:head>
 <h:body>
-    <h:form id="form">
-        <h1>GoogleFaces</h1>
-        <h2>Column Chart</h2>
-        <gc:columnChart value="#{testController.dataTable}" options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}"/>
-        <h2>Pie Chart</h2>
-        <gc:pieChart value="#{testController.dataTable}" options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}"/>
-        <h2>Bar Chart</h2>
-        <gc:barChart value="#{testController.dataTable}" options="bar: {groupWidth: '90%'}" />
-    </h:form>
+
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="page-header">
+					<h1>
+						GoogleFaces <small>JSF component library for Google Charts</small>
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<div class="well">
+					<h2>Column Chart</h2>
+					<gc:columnChart value="#{testController.dataTable}"
+						options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
+				</div>
+			</div>
+			<div class="span4">
+				<div class="well">
+					<h2>Pie Chart</h2>
+					<gc:pieChart value="#{testController.dataTable}"
+						options="backgroundColor: 'none'" />
+
+				</div>
+			</div>
+			<div class="span4">
+				<div class="well">
+					<h2>Bar Chart</h2>
+					<gc:barChart value="#{testController.dataTable}"
+						options="backgroundColor: 'none', legend: {position:'none'}, bar: {groupWidth: '90%'}" />
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+	<h:outputStylesheet name="bootstrap.min.css" />
+	<h:outputScript name="bootstrap.min.js" />
 </h:body>
 </html>
