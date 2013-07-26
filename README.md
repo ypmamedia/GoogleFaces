@@ -1,6 +1,8 @@
 # GoogleFaces
 
-### Introduction.
+### Introduction. 
+
+[![Build Status](https://travis-ci.org/ypmamedia/GoogleFaces.png?branch=master)](https://travis-ci.org/ypmamedia/GoogleFaces)
 
 GoogleFaces (http://googlefaces.ypmamedia.nl) is a JSF library which provides a set of JSF components 
 to use Google Charts in your JSF application.
