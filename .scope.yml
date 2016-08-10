@@ -3,7 +3,7 @@ languages:
 - name: java
   production:
     exclude:
-      - /webapp/.*.java
+      - .*TestController.java
   test:
     include:
-      - /webapp/.*.java
+      - .*TestController.java
